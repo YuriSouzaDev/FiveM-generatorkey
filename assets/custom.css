@@ -30,6 +30,10 @@ body {
 }
 
 /* Fonts Size */
+.font-18 {
+  font-size: 18px !important;
+}
+
 .font-22 {
   font-size: 22px !important;
 }
@@ -57,7 +61,7 @@ body {
   width: 100% !important;
 }
 
-.max-width-800 {
+.width-800 {
   width: 800px !important;
 }
 
@@ -70,6 +74,26 @@ body {
 }
 
 /* Custom margins and paddings */
+
+.p-10 {
+  padding: 10px !important;
+}
+
+.pt-10 {
+  padding-top: 10px !important;
+}
+
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+
+.pl-10 {
+  padding-left: 10px !important;
+}
+
+.pr-10 {
+  padding-right: 10px !important;
+}
 
 .p-20 {
   padding: 20px !important;
@@ -91,10 +115,36 @@ body {
   padding-right: 20px !important;
 }
 
+.p-40 {
+  padding: 40px !important;
+}
+
+.pt-40 {
+  padding-top: 40px !important;
+}
+
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+
+.pl-40 {
+  padding-left: 40px !important;
+}
+
+.pr-40 {
+  padding-right: 40px !important;
+}
+
 .pt-50 {
   padding-top: 50px !important;
 }
 
 .pb-128 {
   padding-bottom: 128px !important;
+}
+
+/* borders and line */
+
+.border-1-white {
+  border: 1px solid #fff;
 }
