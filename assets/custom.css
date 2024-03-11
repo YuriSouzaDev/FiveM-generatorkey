@@ -1,0 +1,73 @@
+:root {
+  --bg-color-aside: #101020;
+  --bg-color-content: #191933;
+  --primary-text-color: #0fefd2;
+}
+
+/* colors */
+
+.bg-color-aside {
+  background-color: var(--bg-color-aside);
+}
+
+.bg-color-content {
+  background-color: var(--bg-color-content);
+}
+
+.text-primary-color {
+  color: var(--primary-text-color);
+}
+
+/* Fonts Size */
+.font-22 {
+  font-size: 22px !important;
+}
+
+/* Custom */
+.nav {
+  border: none !important;
+}
+
+.nav-link {
+  border-color: none !important;
+  border: none !important;
+}
+
+.nav-link.active {
+  background-color: var(--bg-color-content) !important;
+  color: var(--primary-text-color) !important;
+  border-color: none !important;
+  border-radius: 8px 0 0 8px !important;
+}
+
+/* Custom Measurements */
+
+.w-100 {
+  width: 100% !important;
+}
+
+.char-40 {
+  width: 13ch !important;
+}
+
+/* Custom margins and paddings */
+
+.p-20 {
+  padding: 20px !important;
+}
+
+.pt-20 {
+  padding-top: 20px !important;
+}
+
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+
+.pl-20 {
+  padding-left: 20px !important;
+}
+
+.pr-20 {
+  padding-right: 20px !important;
+}
