@@ -57,8 +57,8 @@ body {
   width: 100% !important;
 }
 
-.char-40 {
-  width: 13ch !important;
+.max-width-800 {
+  width: 800px !important;
 }
 
 .max-width-180 {
@@ -95,6 +95,6 @@ body {
   padding-top: 50px !important;
 }
 
-.pb-50 {
+.pb-128 {
   padding-bottom: 128px !important;
 }
