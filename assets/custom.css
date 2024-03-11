@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
 :root {
   --bg-color-aside: #101020;
   --bg-color-content: #191933;
   --primary-text-color: #0fefd2;
+}
+
+body {
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* colors */
@@ -29,6 +40,7 @@
 }
 
 .nav-link {
+  font-size: 20px;
   border-color: none !important;
   border: none !important;
 }
@@ -37,7 +49,6 @@
   background-color: var(--bg-color-content) !important;
   color: var(--primary-text-color) !important;
   border-color: none !important;
-  border-radius: 8px 0 0 8px !important;
 }
 
 /* Custom Measurements */
@@ -48,6 +59,14 @@
 
 .char-40 {
   width: 13ch !important;
+}
+
+.max-width-180 {
+  max-width: 180px !important;
+}
+
+.height-700 {
+  height: 700px !important;
 }
 
 /* Custom margins and paddings */
@@ -70,4 +89,12 @@
 
 .pr-20 {
   padding-right: 20px !important;
+}
+
+.pt-50 {
+  padding-top: 50px !important;
+}
+
+.pb-50 {
+  padding-bottom: 128px !important;
 }
