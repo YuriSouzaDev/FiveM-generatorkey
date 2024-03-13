@@ -11,57 +11,147 @@
 </head>
 
 <body>
-    <div class="d-flex">
-        <div class="pt-20 pb-20 pl-20 bg-color-aside height-700 d-flex flex-column justify-content-between rounded-start-3">
-            <div class="d-flex flex-column justify-content-center align-items-center pr-20">
-                <div class="mb-2">
-                    <img class="rounded-circle" src="/assets/img/Ellipse 1.jpg" alt="" height="88px" width="88px">
-                </div>
-                <h1 class="text-white max-width-180 font-22 text-center">Gerenciamento de Chaves</h1>
+    <div class="pr-20 pl-20 row gap-0 p-0 align-items-center justify-content-center vh-100 m-auto max-width-1000 w-100">
+        <input type="checkbox" id="check" checked>
+        <div class="pt-20 pb-20 pl-20 bg-color-aside row g-0 gap-0 rounded-start-3 col-3 col-md-3 p-0 max-height-700 h-100 position-relative sidebar">
+            <label for="check" class="label position-absolute text-primary-color top-0 end-0 pt-10 pr-10 pb-0 pl-10 max-content bg-color-content cursor-pointer font-20 d-flex align-items-center justify-content-center z-3">
+                <i class="bi bi-arrow-left"></i>
+            </label>
+            <div class="d-flex pr-20
+             flex-column justify-content-center align-items-center pb-40 profile_info">
+                <img class="profile_image rounded-circle mb-3" src="/assets/img/Ellipse 1.jpg" alt data-image>
+                <h1 class="text-white max-width-180 font-22 text-center mb-20 mt-0" data-title>Gerenciamento de Chaves</h1>
             </div>
-            <ul class="nav nav-tabs d-flex flex-column pb-128" id="myTab" role="tablist">
-                <li class="nav-item " role="presentation">
-                    <button class="nav-link text-white w-100 rounded-start-2 active text-start" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-house-door"></i> Dashboard</button>
+            <ul class="nav nav-tabs d-flex flex-column p-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link text-white active text-start rounded-0 rounded-start-2" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-house-door"></i><span>Dashboard</span></a>
+                    <span class="toolTip">Dashboard</span>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link text-white w-100 rounded-start-2 text-start" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-key"></i> Criar Chave</button>
+                    <a class="nav-link text-white text-start rounded-0 rounded-start-2" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-key"></i><span>Criar Chave</span></a>
+                    <span class="toolTip">Criar Chave</span>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link text-white w-100 rounded-start-2 text-start" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i class="bi bi-eye-fill"></i> Criadas</button>
+                    <a class="nav-link text-white text-start rounded-0 rounded-start-2" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i class="bi bi-eye-fill"></i><span>Criadas</span></a>
+                    <span class="toolTip">Criadas</span>
                 </li>
             </ul>
-            <div class="">
-                <li class="nav-item " role="presentation">
-                    <button class="nav-link text-white bg-transparent text-white w-100" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-box-arrow-left"></i> Sair</button>
+            <div>
+                <li class="nav-item list-unstyled" role="presentation">
+                    <a class="nav-link bg-transparent text-white w-100 text-start bg-black" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-box-arrow-left pr-10"></i><span>Sair</span></a>
+                    <span class="toolTip">Sair</span>
                 </li>
             </div>
         </div>
-        <div class="tab-content text-white" id="myTabContent">
-            <div class="tab-pane fade show bg-color-content width-800 pr-40 pl-40 pt-40 pb-20 h-100  rounded-end-3 active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="tab-content text-white col-9 col-md-9 pl-20 pr-20 h-100 max-height-700 bg-color-content content rounded-end-3" id="myTabContent">
+            <div class="tab-pane fade show bg-color-content pt-40 pb-20 rounded-end-3 h-100 position-static z-2 active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 <div class="rounded-3 p-10 border-1-white bg-color-aside">
                     <h2 class="font-22">Bem vindo <span class="text-primary-color">Fulano</span></h2>
                     <p class="font-18 opacity-75">Este é o painel de gerenciamento de chaves da sua cidade, aqui você pode criar chaves e distribuir pela cidade ou até vender!</p>
                 </div>
 
-                <div class="d-flex justify-content-center gap-3">
-                    <div class="p-20 p-10 bg-color-aside mt-4 text-center border-1-white rounded-3">
+                <div class="mt-4 row p-0 justify-content-center gap-3 w-100 m-0">
+                    <div class="p-20 p-10 bg-color-aside text-center border-1-white rounded-3 col-5">
                         <h2 class="font-22 mb-1">Keys existentes</h2>
                         <p class="font-44 text-primary-color">400</p>
                     </div>
-                    <div class="p-20 p-10 bg-color-aside mt-4 text-center border-1-white rounded-3">
+                    <div class="p-20 p-10 bg-color-aside text-center border-1-white rounded-3 col-5">
                         <h2 class="font-22 mb-1">Keys não usadas</h2>
                         <p class="font-44 text-primary-color">300</p>
                     </div>
                 </div>
+
+                <div class="p-10 bg-color-aside bg-color-aside text-center border-1-white mt-4 rounded-3">
+                    <h2 class="font-22 mb-1">Ultimas chaves criadas</h2>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex text-primary-color p-10 font-18 align-items-center">
+                                <p class="m-0 width-40 text-start">Id</p>
+                                <p class="text-white m-0 me-4 font-22">|</p>
+                                <p class="m-0">Key</p>
+                            </div>
+                            <div class="d-flex text-primary-color p-10 font-18 align-items-center justify-content-start pr-110">
+                                <p class="m-0">Ações</p>
+                            </div>
+                        </div>
+                        <div class="overflow-y-auto max-height-170 h-100 key-list-dashboard">
+                            <div class="d-flex justify-content-between align-items-center p-10 mb-3 rounded-3 bg-color-content gap-3">
+                                <div class="d-flex align-items-center justify-content-between font-14">
+                                    <p class="id m-0 text-start width-60">
+                                        1
+                                    </p>
+                                    <p class="m-0 font-22 me-4">|</p>
+                                    <p class="key m-0 overflow-auto w-100 h-100">********************</p>
+                                </div>
+                                <div class="icons-keys d-flex align-items-center gap-1">
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-eye"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-copy"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-search"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-pencil"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-trash"></i></i></button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center p-10 mb-3 rounded-3 bg-color-content gap-3">
+                                <div class="d-flex align-items-center justify-content-between font-14">
+                                    <p class="id m-0 text-start width-60">
+                                        1
+                                    </p>
+                                    <p class="m-0 font-22 me-4">|</p>
+                                    <p class="key m-0 overflow-auto w-100 h-100">********************</p>
+                                </div>
+                                <div class="icons-keys d-flex align-items-center gap-1">
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-eye"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-copy"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-search"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-pencil"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-trash"></i></i></button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center p-10 mb-3 rounded-3 bg-color-content gap-3">
+                                <div class="d-flex align-items-center justify-content-between font-14">
+                                    <p class="id m-0 text-start width-60">
+                                        1
+                                    </p>
+                                    <p class="m-0 font-22 me-4">|</p>
+                                    <p class="key m-0 overflow-auto w-100 h-100">********************</p>
+                                </div>
+                                <div class="icons-keys d-flex align-items-center gap-1">
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-eye"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-copy"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-search"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-pencil"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-trash"></i></i></button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center p-10 mb-3 rounded-3 bg-color-content gap-3">
+                                <div class="d-flex align-items-center justify-content-between font-14">
+                                    <p class="id m-0 text-start width-60">
+                                        1
+                                    </p>
+                                    <p class="m-0 font-22 me-4">|</p>
+                                    <p class="key m-0 overflow-auto w-100 h-100">********************</p>
+                                </div>
+                                <div class="icons-keys d-flex align-items-center gap-1">
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-eye"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-copy"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-search"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-pencil"></i></button>
+                                    <button class="bg-transparent text-white border-0"><i class="bi bi-trash"></i></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane fade bg-color-content width-800 pr-40 pl-40 pt-20 pb-20 h-100  rounded-end-3" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">Chaves</div>
-            <div class="tab-pane fade bg-color-content width-800 pr-40 pl-40 pt-20 pb-20 h-100  rounded-end-3" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Criadas</div>
+            <div class="tab-pane fade bg-color-content max-content pr-40 pl-40 pt-40 pb-20 h-100  rounded-end-3" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">Chaves</div>
+            <div class="tab-pane fade bg-color-content max-content pr-40 pl-40 pt-40 pb-20 h-100  rounded-end-3" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Criadas</div>
         </div>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.js"></script>
 </body>
 
 </html>
