@@ -45,6 +45,25 @@
         </div>
         <div class="tab-content text-white col-9 col-md-9 pl-20 pr-20 h-100 max-height-700 bg-color-content content rounded-end-3" id="myTabContent">
             <div class="tab-pane fade show bg-color-content pt-40 pb-20 rounded-end-3 h-100 position-static z-2 active" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="rounded-3 p-10 border-1-white bg-color-aside">
                     <h2 class="font-22">Bem vindo <span class="text-primary-color">Fulano</span></h2>
                     <p class="font-18 opacity-75">Este é o painel de gerenciamento de chaves da sua cidade, aqui você pode criar chaves e distribuir pela cidade ou até vender!</p>
@@ -86,7 +105,7 @@
                                 <div class="icons-keys d-flex align-items-center gap-1">
                                     <button class="bg-transparent text-white border-0"><i class="bi bi-eye"></i></button>
                                     <button class="bg-transparent text-white border-0"><i class="bi bi-copy"></i></button>
-                                    <button class="bg-transparent text-white border-0"><i class="bi bi-search"></i></button>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="bg-transparent text-white border-0"><i class="bi bi-search"></i></button>
                                     <button class="bg-transparent text-white border-0"><i class="bi bi-pencil"></i></button>
                                     <button class="bg-transparent text-white border-0"><i class="bi bi-trash"></i></i></button>
                                 </div>
