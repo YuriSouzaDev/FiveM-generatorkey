@@ -34,6 +34,10 @@ body {
   font-size: 18px !important;
 }
 
+.font-20 {
+  font-size: 20px !important;
+}
+
 .font-22 {
   font-size: 22px !important;
 }
@@ -69,11 +73,12 @@ body {
   border-radius: 0 !important;
 }
 
-.key-list-dashboard::-webkit-scrollbar {
+.overflow-y-auto::-webkit-scrollbar {
   width: 4px !important;
+  height: 4px !important;
 }
 
-.key-list-dashboard::-webkit-scrollbar-thumb {
+.overflow-y-auto::-webkit-scrollbar-thumb {
   background-color: var(--primary-text-color);
   border-radius: 6px;
 }
@@ -85,6 +90,40 @@ body {
 .row > * {
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+.label-select {
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(
+    var(--bg-color-aside) 50%,
+    var(--bg-color-content) 50%
+  );
+  width: max-content;
+}
+
+form select,
+form input,
+form button {
+  transition: all 0.3s;
+  outline: none !important;
+  border: 2px solid #fff !important;
+}
+
+form select:focus,
+form input:focus {
+  border-color: var(--primary-text-color) !important;
+}
+
+form select:focus ~ label,
+form input:focus ~ label {
+  color: var(--primary-text-color) !important;
+}
+
+form button:hover {
+  color: var(--primary-text-color) !important;
+  border-color: var(--primary-text-color) !important;
 }
 
 /* transitions */
@@ -361,5 +400,11 @@ body {
 
   .max-height-170 {
     max-height: 110px !important;
+  }
+}
+
+@media (max-width: 810px) {
+  .max-height-355 {
+    max-height: 355px !important;
   }
 }

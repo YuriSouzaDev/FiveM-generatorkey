@@ -143,8 +143,98 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade bg-color-content max-content pr-40 pl-40 pt-40 pb-20 h-100  rounded-end-3" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">Chaves</div>
-            <div class="tab-pane fade bg-color-content max-content pr-40 pl-40 pt-40 pb-20 h-100  rounded-end-3" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Criadas</div>
+            <div class="tab-pane fade bg-color-content pt-40 pb-20 rounded-end-3 h-100" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="rounded-3 p-10 border-1-white bg-color-aside">
+                    <h2 class="font-22 text-primary-color">Criar Chaves</span></h2>
+                    <p class="font-18 opacity-75">Aqui você consegue criar suas chaves, com toda personalização possível, adicionando veículos, dinheiro, etc... e até limite de uso.</p>
+                </div>
+                <div class="p-20 pl-20 pr-20 bg-color-aside bg-color-aside text-center mt-4 rounded-3 border-1-white">
+                    <h2 class="font-22 mb-4">Criar Chaves</h2>
+                    <form class="row p-20 gap-4 justify-content-center overflow-y-auto max-height-355" action="">
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <select class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="veiculoSelect" id="veiculoSelect">
+                                <option value="" selected disabled>Selecione</option>
+                            </select>
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="veiculoSelect">
+                                veiculo
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <select class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="grupoSelect" id="grupoSelect">
+                                <option value="" selected disabled>Selecione</option>
+                            </select>
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="grupoSelect">
+                                Grupos
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <select class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="imovelSelect" id="imovelSelect">
+                                <option value="" selected disabled>Selecione</option>
+                            </select>
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="imovelSelect">
+                                imovel
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="dinheiroInput" id="dinheiroInput" placeholder="Digite a quantia">
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="dinheiroInput">
+                                dinheiro
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <select class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="itemSelect" id="itemSelect">
+                                <option value="" selected disabled>Selecione</option>
+                            </select>
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="itemSelect">
+                                item
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <select class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="skinSelect" id="skinSelect">
+                                <option value="" selected disabled>Selecione</option>
+                            </select>
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="skinSelect">
+                                skin
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <select class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="armaSelect" id="armaSelect">
+                                <option value="" selected disabled>Selecione</option>
+                            </select>
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="armaSelect">
+                                arma
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="vagasInput" id="vagasInput" placeholder="Digite o limite de vagas na garagem">
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="vagasInput">
+                                vagas
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="coinsInput" id="coinsInput" placeholder="Digite a quantia de coins do seu servidor">
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="coinsInput">
+                                coins
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="multaInput" id="multaInput" placeholder="Digite a quantia de multa">
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="multaInput">
+                                multa
+                            </label>
+                        </div>
+                        <div class="col-sm-5 col-md-3 position-relative bg-color-content">
+                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="limitesInput" id="limitesInput" placeholder="Quantas vezes a key pode ser usada"><label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="limitesInput">
+                                limites de uso
+                            </label>
+                        </div>
+                        <div>
+                            <button class="col-12 p-10 pl-40 pr-40 text-white rounded-3 max-content bg-color-content border-1-white" type="submit">Criar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-pane fade bg-color-content max-content pr-40 pl-40 pt-40 pb-20 h-100 rounded-end-3" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Criadas</div>
         </div>
     </div>
 
