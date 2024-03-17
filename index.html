@@ -47,17 +47,96 @@
             <div class="tab-pane fade show bg-color-content pt-40 pb-20 rounded-end-3 h-100 position-static z-2 active" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-content bg-color-content rounded-3">
+                            <div class="modal-header d-flex justify-content-between border-0">
+                                <h1 class="modal-title text-primary-color font-26" id="exampleModalLabel">Visualização da Chave</h1>
+                                <button class="bg-transparent border-0 text-white" type="button" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-box-arrow-right"></i></button>
                             </div>
                             <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <form class="row gap-3 justify-content-center p-10" action="">
+                                    <div class="row justify-content-center gap-3 mb-2">
+                                        <div class="col-sm-3 col-md-3 position-relative bg-color-content ">
+                                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="idInputDetails" id="idInputDetails" disabled value="1">
+                                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="idInputDetails">
+                                                ID
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 position-relative bg-color-content">
+                                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="usosInputDetails" id="usosInputDetails" disabled value="3">
+                                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="usosInputDetails">
+                                                Usos
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 position-relative bg-color-content mb-2">
+                                        <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="veiculosInputDetails" id="veiculosInputDetails" disabled value="Ferrari">
+                                        <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="veiculosInputDetails">
+                                            Veiculo
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 position-relative bg-color-content mb-2">
+                                        <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="grupoInputDetails" id="grupoInputDetails" disabled value="2">
+                                        <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="grupoInputDetails">
+                                            Grupo
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 position-relative bg-color-content mb-2">
+                                        <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="imovelInputDetails" id="imovelInputDetails" disabled value="2">
+                                        <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="imovelInputDetails">
+                                            Imovel
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 position-relative bg-color-content mb-2">
+                                        <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="dinheiroInputDetails id=" dinheiroInputDetails disabled value="2">
+                                        <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="dinheiroInputDetails">
+                                            dinheiro
+                                        </label>
+                                    </div>
+                                    <div class=" col-sm-3 col-md-3 position-relative bg-color-content mb-2">
+                                        <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="itemInputDetails" id="itemInputDetails" disabled value="2">
+                                        <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="itemInputDetails">
+                                            item
+                                        </label>
+                                    </div>
+                                    <div class=" col-sm-3 col-md-3 position-relative bg-color-content mb-2">
+                                        <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="skinInputDetails" id="skinInputDetails" disabled value="2">
+                                        <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="skinInputDetails">
+                                            skin
+                                        </label>
+                                    </div>
+                                    <div class=" col-sm-3 col-md-3 position-relative bg-color-content mb-2">
+                                        <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="armaInputDetails" id="armaInputDetails" disabled value="2">
+                                        <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="armaInputDetails">
+                                            arma
+                                        </label>
+                                    </div>
+                                    <div class=" col-sm-3 col-md-3 position-relative bg-color-content mb-2">
+                                        <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="vagasInputDetails" id="vagasInputDetails" disabled value="2">
+                                        <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="vagasInputDetails">
+                                            vagas
+                                        </label>
+                                    </div>
+                                    <div class=" col-sm-3 col-md-3 position-relative bg-color-content mb-2">
+                                        <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="coinsInputDetails" id="coinsInputDetails" disabled value="2">
+                                        <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="coinsInputDetails">
+                                            coins
+                                        </label>
+                                    </div>
+                                    <div class="row justify-content-center gap-3 mb-2">
+                                        <div class="col-sm-3 col-md-3 position-relative bg-color-content ">
+                                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="multaInputDetails" id="multaInputDetails" disabled value="1">
+                                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0 bg-color-content" for="multaInputDetails">
+                                                multa
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-3 col-md-3 position-relative bg-color-content">
+                                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="limitesInputDetails" id="limitesInputDetails" disabled value="3">
+                                            <label class="position-absolute p-10 font-12 label-select text-uppercase pb-0 pt-0 bg-color-content font-14" for="limitesInputDetails">
+                                                limites de uso
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -169,7 +248,7 @@
                 </div>
                 <div class="p-20 pl-20 pr-20 bg-color-aside bg-color-aside text-center mt-4 rounded-3 border-1-white">
                     <h2 class="font-22 mb-4">Criar Chaves</h2>
-                    <form class="row p-20 gap-4 justify-content-center overflow-y-auto max-height-355" action="">
+                    <form class="row p-20 gap-4 justify-content-center overflow-y-auto max-height-355 form-chaves-criadas" action="">
                         <div class="col-sm-5 col-md-3 position-relative bg-color-content">
                             <select class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="veiculoSelect" id="veiculoSelect">
                                 <option value="" selected disabled>Selecione</option>
@@ -243,7 +322,8 @@
                             </label>
                         </div>
                         <div class="col-sm-5 col-md-3 position-relative bg-color-content">
-                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="limitesInput" id="limitesInput" placeholder="Quantas vezes a key pode ser usada"><label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="limitesInput">
+                            <input class="p-10 w-100 bg-transparent text-white rounded-3 font-18 bg-color-aside" name="limitesInput" id="limitesInput" placeholder="Quantas vezes a key pode ser usada">
+                            <label class="position-absolute p-10 font-14 label-select text-uppercase pb-0 pt-0" for="limitesInput">
                                 limites de uso
                             </label>
                         </div>

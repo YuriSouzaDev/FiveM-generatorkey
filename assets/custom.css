@@ -26,6 +26,10 @@ body {
 }
 
 /* Fonts Size */
+.font-12 {
+  font-size: 12px !important;
+}
+
 .font-14 {
   font-size: 14px !important;
 }
@@ -96,11 +100,14 @@ body {
   top: -25%;
   left: 50%;
   transform: translate(-50%);
+  width: max-content;
+}
+
+.form-chaves-criadas .label-select {
   background: linear-gradient(
     var(--bg-color-aside) 50%,
     var(--bg-color-content) 50%
   );
-  width: max-content;
 }
 
 form select,
